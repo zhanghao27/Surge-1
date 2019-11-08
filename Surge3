@@ -27,6 +27,7 @@ hide-crashlytics-request=1
 民主 = select, DIRECT, 富强
 文明 = select, REJECT, REJECT-TINYGIF, 富强, 民主
 和谐 = select, REJECT-TINYGIF, REJECT, 富强, 民主
+# CUSTOM GROUP
 
 [Rule]
 # Client
