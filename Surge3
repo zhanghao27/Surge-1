@@ -1,29 +1,22 @@
 [General]
 # 日志等级
 loglevel = notify
-
 # > 测速超时（秒）
 test-timeout = 3
-
 # IPv6 支持
 ipv6 = true
-
 # > 跳过代理
 skip-proxy = 192.168.0.0/16, 193.168.0.0/24, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8, 127.0.0.1, localhost, *.local
-
 # > Show Reject Error Page
 show-error-page-for-reject = true
-
 # > TCP Force HTTP Hosts
 force-http-engine-hosts = 123.59.31.1,119.18.193.135,122.14.246.33
-
 # [DNS] => DNS 服务器
 dns-server = 119.29.29.29,223.5.5.5,system
 
 [Replica]
 # > 隐藏 Apple 请求
 hide-apple-request=1
-
 # > 隐藏 Crashlytics 请求
 hide-crashlytics-request=1
 
@@ -50,28 +43,20 @@ PROCESS-NAME,Transmission,DIRECT
 PROCESS-NAME,uTorrent,DIRECT
 PROCESS-NAME,WebTorrent,DIRECT
 PROCESS-NAME,WebTorrent Helper,DIRECT
-
 # Advertising 广告（以及隐私追踪）
 RULE-SET,https://raw.githubusercontent.com/eHpo1/Surge/master/Ruleset/Advertising.list,文明
-
 # Hijacking 劫持（运营商及臭名昭著的网站和应用）
 RULE-SET, https://raw.githubusercontent.com/eHpo1/Surge/master/Ruleset/Hijacking.list,文明
-
 # 国际流媒体服务
 RULE-SET,https://raw.githubusercontent.com/eHpo1/Surge/master/Ruleset/GlobalMedia.list,富强
-
 # Global 全球加速
 RULE-SET,https://raw.githubusercontent.com/eHpo1/Surge/master/Ruleset/Global.list,富强
-
 # China 中国直连
 RULE-SET,https://raw.githubusercontent.com/eHpo1/Surge/master/Ruleset/China.list,民主
-
 # Local Area Network
 RULE-SET,LAN,民主
-
 # GeoIP China
 GEOIP,CN,民主
-
 FINAL,富强,dns-failed
 
 [Host]
@@ -81,13 +66,10 @@ FINAL,富强,dns-failed
 [URL Rewrite]
 #vsco
 ^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/\d{1,} https://raw.githubusercontent.com/NobyDa/Script/Pv/QuantumultX/File/1546 302
-
 #多玩
 &show_ad=1& &show_ad=0& 307
-
 # Redirect Google Search Service
 ^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
-
 # Redirect HTTP to HTTPS
 ^https?:\/\/(www.)?taobao\.com\/ https://taobao.com/ 302
 ^https?:\/\/(www.)?jd\.com\/ https://www.jd.com/ 302
@@ -95,7 +77,6 @@ FINAL,富强,dns-failed
 ^https?:\/\/you\.163\.com\/ https://you.163.com/ 302
 ^https?:\/\/(www.)?suning\.com/ https://suning.com/ 302
 ^https?:\/\/(www.)?yhd\.com https://yhd.com/ 302
-
 # Redirect False to True
 # > IGN China to IGN Global
 ^https?:\/\/(www.)?ign\.xn--fiqs8s\/ http://cn.ign.com/ccpref/us 302
@@ -135,14 +116,12 @@ FINAL,富强,dns-failed
 ^https?:\/\/(www.)?xshellcn\.com\/ https://www.netsarang.com/products/xsh_overview.html 302
 ^https?:\/\/(www.)?yuanchengxiezuo\.com\/ https://www.teamviewer.com/zhcn/ 302
 ^https?:\/\/(www.)?zbrushcn\.com\/ http://pixologic.com/ 302
-
 # TikTok
 (?<=(carrier|account|sys)_region=)CN JP 307
 
 [Header Rewrite]
 #黑羽coc
 ^https?:\/\/coc\.heiyu100\.cn header-del Cookie
-
 ^https?://zhidao\.baidu\.com header-replace User-Agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15
 
 [MITM]
@@ -154,12 +133,12 @@ ca-p12 = MIIKPAIBAzCCCgYGCSqGSIb3DQEHAaCCCfcEggnzMIIJ7zCCBF8GCSqGSIb3DQEHBqCCBFA
 
 [Script]
 #旅法师营地
-http-response ^https?:\/\/www\.iyingdi\.cn\/user\/personal requires-body=1,max-size=0,script-path=8D349B10-08BF-4FBA-91EA-1D86CF421FA6.js
+http-response ^https?:\/\/www\.iyingdi\.cn\/user\/personal requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/eHpo1/Surge/master/Script/iyingdi.js
 #知乎
 http-response ^https?:\/\/api\.zhihu\.com\/(moments\?|topstory\/recommend|.*\/questions|market\/header) requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/Surge/resources/script/zhihu.js
 #哔哩哔哩
 http-response ^https?:\/\/ap(i|p).bilibili.com\/x\/(resource\/show\/tab|v2\/(reply\/main|view\/material|account\/mine|view|feed\/index))\?access_key requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/Surge/resources/script/bilibili.js
 #wps
-http-response ^https://account.wps.cn/api/users requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/eHpo1/Surge/master/wps.js,script-update-interval=0
+http-response ^https://account.wps.cn/api/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/eHpo1/Surge/master/Script/wps.js
 #微信
 http-response ^https://mp.weixin.qq.com/mp/getappmsgad requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/WeChat.js
