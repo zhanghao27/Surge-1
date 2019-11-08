@@ -667,6 +667,8 @@ URL-REGEX,^https?:\/\/cdn\.moji\.com\/(adoss|adlink)\/
 URL-REGEX,^https?:\/\/mob\.mddcloud\.com\.cn\/api\/(ad|advert)\/
 # > 漫画人
 URL-REGEX,^https?:\/\/mangaapi\.manhuaren\.com\/v\d\/public\/getStartPageAds
+# > 美篇
+URL-REGEX,^https?:\/\/api\.meipian\.me.+advert
 # > 美团
 URL-REGEX,^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/.+\.(gif|jpg|jpg\.webp)$
 URL-REGEX,^https?:\/\/p\d\.meituan\.net\/wmbanner\/[A-Za-z0-9]+\.jpg
