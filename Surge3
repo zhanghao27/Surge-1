@@ -30,7 +30,6 @@ hide-crashlytics-request=1
 # CUSTOM GROUP
 
 [Rule]
-# Client
 # > Proxy
 PROCESS-NAME,v2ray,DIRECT
 PROCESS-NAME,ss-local,DIRECT
@@ -78,7 +77,6 @@ FINAL,富强,dns-failed
 ^https?:\/\/you\.163\.com\/ https://you.163.com/ 302
 ^https?:\/\/(www.)?suning\.com/ https://suning.com/ 302
 ^https?:\/\/(www.)?yhd\.com https://yhd.com/ 302
-# Redirect False to True
 # > IGN China to IGN Global
 ^https?:\/\/(www.)?ign\.xn--fiqs8s\/ http://cn.ign.com/ccpref/us 302
 # > Fake Website Made By Makeding
