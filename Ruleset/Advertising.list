@@ -652,6 +652,8 @@ URL-REGEX,^https?:\/\/.+\/letv-gug\/
 URL-REGEX,^https?:\/\/api\.laifeng\.com\/v\d\/start\/ads
 # > 懒投资
 URL-REGEX,^https?:\/\/ios\.lantouzi\.com\/api\/startpage
+# > 旅法师营地
+URL-REGEX,^https?:\/\/www\.iyingdi\.cn\/ad
 
 # M
 # > MI
