@@ -668,6 +668,8 @@ URL-REGEX,^https?:\/\/api\.mgzf\.com\/renter-operation\/home\/startHomePage
 URL-REGEX,^https?:\/\/cdn\.moji\.com\/(adoss|adlink)\/
 # > 埋堆堆
 URL-REGEX,^https?:\/\/mob\.mddcloud\.com\.cn\/api\/(ad|advert)\/
+# > 买单吧
+URL-REGEX,^https?:\/\/creditcardapp\.bankcomm\.com\/mapp\/common\/queryGuidePageAds\.do$
 # > 漫画人
 URL-REGEX,^https?:\/\/mangaapi\.manhuaren\.com\/v\d\/public\/getStartPageAds
 # > 美篇
@@ -883,9 +885,7 @@ URL-REGEX,^https?:\/\/yxyapi\d\.drcuiyutao\.com\/yxy-api-gateway\/api\/json\/adv
 URL-REGEX,^https?:\/\/a\.qiumibao\.com\/activities\/config\.php
 URL-REGEX,^https?:\/\/.+\/allOne\.php\?ad_name
 # > 知乎
-URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v4\/community-ad\/
-URL-REGEX,^https?:\/\/api\.zhihu\.com\/(launch|real_time)
-URL-REGEX,^https?:\/\/api\.zhihu\.com\/commercial_api\/(launch|real_time)
+URL-REGEX, ^https?:\/\/(api|www)\.zhihu\.com\/(fringe|zst|commercial|real_time|ad-style-service|banners|topstory/hot-lists|market/popover|mqtt|.*(launch|featured-comment-ad|recommendations|community-ad)|search/(top|tab|preset)|ab)
 # > 追书神器
 URL-REGEX,^https?:\/\/(api|b)\.zhuishushenqi\.com\/advert
 URL-REGEX,^https?:\/\/api\.zhuishushenqi\.com\/splashes\/ios
