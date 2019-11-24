@@ -4,4 +4,4 @@ obj.user.vipEndTime = 1761826805;
 
 obj.user.viplimit = 3;
 
-$done({body: JSON.stringify(obj)});
+$done({ body: JSON.stringify(obj) });
