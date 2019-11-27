@@ -2,7 +2,7 @@
 国区wps
 
 [Script]
-http-response ^https?:\/\/account\.wps\.cn\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/eHpo1/Surge/master/Script/wps.js
+http-response ^https?:\/\/account\.wps\.cn\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/zhanghao27/QuantumultX/master/Script/wps.js
 
 [MITM]
 hostname = account.wps.cn
